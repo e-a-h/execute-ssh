@@ -1,6 +1,4 @@
 #!/bin/bash
-set -eu
-
 SSHPATH="$HOME/.ssh"
 mkdir "$SSHPATH"
 echo "$DEPLOY_KEY" > "$SSHPATH/key"
