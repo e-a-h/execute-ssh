@@ -1,5 +1,7 @@
 FROM debian:9.5-slim
 
+RUN apt update
+RUN apt -yq install openssh-client
 
 # Label
 LABEL "com.github.actions.name"="Execute remote ssh commands"
