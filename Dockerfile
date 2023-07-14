@@ -1,5 +1,6 @@
-FROM debian:9.5-slim
+FROM debian:stable-slim
 
+RUN apt -yq install apt-transport-https
 RUN apt update
 RUN apt -yq install openssh-client
 
